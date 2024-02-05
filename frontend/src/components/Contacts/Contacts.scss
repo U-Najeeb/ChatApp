@@ -1,0 +1,95 @@
+.contacts--container {
+  display: grid;
+  grid-template-columns: 10% 75% 15%;
+  overflow: hidden;
+  background-color: #080420;
+  width: 100%;
+  position: relative ;
+
+  .contacts--wrapper {
+    width: 20.3rem;
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+
+      h3 {
+        color: white;
+        text-transform: uppercase;
+      }
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.8rem;
+      overflow: auto;
+
+      .contact {
+        display: flex;
+        background-color: #ffffff39;
+        min-height: 5rem;
+        width: 90%;
+        cursor: pointer;
+        border-radius: 0.2rem;
+        padding: 0.4rem;
+        gap: 1rem;
+        align-items: center;
+        transition: 0.5s ease-in-out;
+
+        .avatar {
+          border-radius: 1rem;
+
+          img {
+            border-radius: 50%;
+            height: 3.1rem;
+            width: 3.3rem;
+            object-fit: cover;
+          }
+        }
+        .contact--username {
+          color: white;
+          text-transform: uppercase;
+          letter-spacing: 0.4px;
+        }
+      }
+      .selected{
+        background-color: #9186f3;
+    }
+    }
+
+    .current--user{
+        background-color: #0d0d30;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        position: absolute ;
+        bottom: 0;
+        width: 100%;
+        height: 5rem;
+
+
+        .current--user-avatar{
+            img{
+              border-radius: 50%;
+              height: 3.1rem;
+              width: 3.3rem;
+              object-fit: cover;
+            }
+        }
+
+        .current--user-username{
+            color: white;
+
+            h1{
+                font-size: 1.5rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+  }
+}
