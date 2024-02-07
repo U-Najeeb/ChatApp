@@ -1,31 +1,40 @@
-.welcome--container{
+.welcome--container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .welcome--wrapper {
     width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 
-    .welcome--wrapper{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
+    .welcome--box {
+      font-size: 4rem;
+      text-transform: uppercase;
+      color: white;
 
-        .welcome--box{
-            font-size: 4rem;
-            text-transform: uppercase;
-            color: white;
-
-            .username{
-                color: #9186f3;
-            }
-        }
-
-        .sub--heading-box{
-            font-size: 2rem;
-            color: white;
-        }
+      .username {
+        color: #9186f3;
+      }
     }
+
+    .sub--heading-box {
+      font-size: 2rem;
+      color: white;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .welcome--box {
+        font-size: 2.2rem;
+      }
+      .sub--heading {
+        font-size: 1.3rem;
+      }
+    }
+  }
 }

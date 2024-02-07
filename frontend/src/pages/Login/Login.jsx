@@ -76,7 +76,7 @@ const Register = () => {
   return (
     <>
       <FormContainer className="form--container">
-        <form onSubmit={(e) => handleSubmit(e)}>
+        <form onSubmit={(e) => handleSubmit(e)} className="form">
           <div className="brand">
             <img src="" alt="" />
             <h1>Talky</h1>

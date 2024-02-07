@@ -4,7 +4,7 @@
   overflow: hidden;
   background-color: #080420;
   width: 100%;
-  position: relative ;
+  position: relative;
 
   .contacts--wrapper {
     width: 20.3rem;
@@ -54,42 +54,42 @@
           color: white;
           text-transform: uppercase;
           letter-spacing: 0.4px;
+          font-size: 1rem;
         }
       }
-      .selected{
+      .selected {
         background-color: #9186f3;
+      }
     }
-    }
 
-    .current--user{
-        background-color: #0d0d30;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        position: absolute ;
-        bottom: 0;
-        width: 100%;
-        height: 5rem;
+    .current--user {
+      background-color: #0d0d30;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 5rem;
 
-
-        .current--user-avatar{
-            img{
-              border-radius: 50%;
-              height: 3.1rem;
-              width: 3.3rem;
-              object-fit: cover;
-            }
+      .current--user-avatar {
+        img {
+          border-radius: 50%;
+          height: 3.1rem;
+          width: 3.3rem;
+          object-fit: cover;
         }
+      }
 
-        .current--user-username{
-            color: white;
+      .current--user-username {
+        color: white;
 
-            h1{
-                font-size: 1.5rem;
-                text-transform: uppercase;
-            }
+        h1 {
+          font-size: 1.5rem;
+          text-transform: uppercase;
         }
+      }
     }
   }
 }
