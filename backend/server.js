@@ -17,7 +17,7 @@ const httpServer = createServer(app);
 const io = new Server(httpServer, {
   pingTimeout: 60000,
   cors: {
-    origin: "http://localhost:5173",
+    origin: "http://localhost:5173 https://chat-app-server-woad-alpha.vercel.app/",
     credentials: true,
   },
 });
