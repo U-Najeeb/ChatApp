@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { addMessageRoute, getAllMessages } from "../../utils/apiRoutes";
 import { io } from "socket.io-client";
-const socket = io("http://localhost:5000");
+const socket = io("https://chat-app-server-woad-alpha.vercel.app/");
 
 const ChatContainer = ({ currentChat, currentUser }) => {
   const [messages, setMessages] = useState([]);
