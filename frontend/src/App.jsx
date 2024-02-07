@@ -2,9 +2,9 @@ import { Routes, Route } from "react-router-dom";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import Chat from "./pages/Chat/Chat";
-import SnackBar from "./components/Snackbar/SnackBar.Jsx";
 import { useState } from "react";
 import SnackBarContext from "./context/SnackBarContext";
+import Snackbar from "./components/Snackbar/Snackbar";
 // import SetAvatar from "./pages/SetAvatar/setAvatar";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
         {/* <Route path="/setAvatar" element ={<SetAvatar/>}/> */}
         <Route path="/" element={<Chat />} />
       </Routes>
-      <SnackBar />
+      <Snackbar/>
     </SnackBarContext.Provider>
     </>
   );

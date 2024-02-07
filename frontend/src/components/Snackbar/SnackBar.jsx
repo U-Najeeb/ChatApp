@@ -3,7 +3,7 @@ import { useContext, useEffect } from "react";
 import "./SnackBar.scss";
 import SnackBarContext from "../../context/SnackBarContext";
 
-const SnackBar = () => {
+const Snackbar = () => {
   const { snackbar, setSnackbar } = useContext(SnackBarContext);
   const { open, message, severity } = snackbar;
   const handleClose = () => {
@@ -49,4 +49,4 @@ const SnackBar = () => {
   );
 };
 
-export default SnackBar;
+export default Snackbar;
